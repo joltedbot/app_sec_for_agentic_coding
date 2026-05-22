@@ -107,4 +107,8 @@ When an approach is repeatedly blocked — whether by compilation errors, test f
 
 You have specialized subagents. **Use them proactively** — do not wait for the user to ask.
 
+**validation-specialist** — Launch before any message that contains the words: *complete, done, finished, implemented, ready, deployed* or equivalent. If the agent returns failures: fix them, then relaunch. Do not report partial completion. Do not summarize results before a pass is confirmed. Do not allow the orchestrator to declare success until this agent has returned a pass.
+
 **security-watchdog** — Launch if the implementation touches any of the following, no exceptions: authentication or session handling, authorization or access control, file upload or download, any external API integration, environment variables or secrets, user input that reaches a database or filesystem, or cryptographic operations. If uncertain whether a change qualifies, launch the agent. The cost of a false positive is zero. The cost of a false negative is not.
+
+**code-quality-reviewer** — Launch after any implementation that introduces more than approximately 30 lines of new or substantially modified code. Runs **before** Validation Specialist. This creates the gate sequence: implementation → Quality Review → Validation → done.
