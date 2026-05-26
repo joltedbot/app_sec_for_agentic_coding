@@ -25,3 +25,4 @@
 - [Snyk](https://app.snyk.io)
 - [Socket Firewall](https://socket.dev/features/firewall) 
 - [SonarQube Cloud](sonarcloud.io)
+- [Gitleaks](https://github.com/gitleaks/gitleaks)
