@@ -26,3 +26,10 @@
 - [Socket Firewall](https://socket.dev/features/firewall) 
 - [SonarQube Cloud](sonarcloud.io)
 - [Gitleaks](https://github.com/gitleaks/gitleaks)
+
+
+## Google Antigravity CLI
+Gemini CLI has been deprecated, which is great beacuse it was really bad. It has been replaced with Google Antigravity CLI. It seems to be much better. You can log in with a Google Cloud Project "elastic-sa". They have a Cursor like IDE as well if that is your thing.
+
+Download here.
+https://antigravity.google/download
